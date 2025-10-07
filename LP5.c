@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
         if (rank == 0)
             printf("Please run with at least 2 processes.\n");
         MPI_Finalize();
-        return 0;
+        return 0; 
     }
     if (rank == 0) {
         // Process 0 is the sender

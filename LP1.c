@@ -27,7 +27,7 @@ void merge(int arr[], int l, int m, int r)
         if(L[i]<=R[i])
             arr[k++]=L[i++];
         else
-            arr[k++]=L[j++];
+            arr[k++]=R[j++];
     while(i<n1)
         arr[k++]=L[i++];
     while(j<n2)
@@ -68,11 +68,11 @@ int main() {
     int n;
     printf("Enter number of elements upto MAX\n");
     scanf("%d",&n);
-    if(n>MAX)
-    {
-        printf("Array is too large\n");
-        return 1;
-    }
+    // if(n>MAX)
+    // {
+    //     printf("Array is too large\n");
+    //     return 1;
+    // }
     int* arr_seq=(int*)malloc(n*sizeof(int));
     int* arr_par=(int*)malloc(n*sizeof(int));
 
