@@ -18,11 +18,11 @@ int main() {
     printf("Enter the value of n: ");
     scanf("%d", &n);
     printf("\nPrime numbers from 1 to %d:\n", n);
-    for (int i = 1; i <= n; i++) 
-    {
-        if (is_prime(i))
-            printf("%d ", i);
-    }
+    // for (int i = 1; i <= n; i++) 
+    // {
+    //     if (is_prime(i))
+    //         printf("%d ", i);
+    // }
     printf("\n");
 
     start_time = omp_get_wtime();
